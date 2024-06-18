@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://cloipfx2m6pr2"]
+
+[ext_resource type="PackedScene" uid="uid://c3xc7ekb7plby" path="res://jugador.tscn" id="1_b4cot"]
+[ext_resource type="PackedScene" uid="uid://dyegntr8kvu5q" path="res://platform.tscn" id="2_6ngvf"]
+[ext_resource type="PackedScene" uid="uid://mmimd3lv5yfi" path="res://wall.tscn" id="3_38lfd"]
+
+[node name="Nivel_1" type="Node2D"]
+position = Vector2(5, 0)
+
+[node name="Jugador" parent="." instance=ExtResource("1_b4cot")]
+position = Vector2(451, 208)
+SPEED = 400.0
+JUMP_VELOCITY = -480.0
+gravity = 800
+friction = 10.0
+air_friction = 4.0
+
+[node name="Platform" parent="." instance=ExtResource("2_6ngvf")]
+position = Vector2(1, 341)
+scale = Vector2(1.05682, 0.75)
+input_pickable = true
+
+[node name="Platform2" parent="." instance=ExtResource("2_6ngvf")]
+position = Vector2(-1127, 218)
+input_pickable = true
+
+[node name="Platform3" parent="." instance=ExtResource("2_6ngvf")]
+position = Vector2(1059, 215)
+
+[node name="Platform4" parent="." instance=ExtResource("2_6ngvf")]
+position = Vector2(433, -652)
+scale = Vector2(0.360001, 0.28)
+
+[node name="Platform5" parent="." instance=ExtResource("2_6ngvf")]
+position = Vector2(-321, -78)
+scale = Vector2(0.129601, 0.0783999)
+
+[node name="Platform6" parent="." instance=ExtResource("2_6ngvf")]
+position = Vector2(158, -652)
+scale = Vector2(0.334909, 0.276648)
+
+[node name="Platform7" parent="." instance=ExtResource("2_6ngvf")]
+position = Vector2(479, -358)
+scale = Vector2(0.334909, 0.276648)
+
+[node name="Platform8" parent="." instance=ExtResource("2_6ngvf")]
+position = Vector2(841, -784)
+scale = Vector2(0.334909, 0.276648)
+
+[node name="wall" parent="." instance=ExtResource("3_38lfd")]
+position = Vector2(48, -492)
+
+[node name="wall2" parent="." instance=ExtResource("3_38lfd")]
+position = Vector2(1118, -500)

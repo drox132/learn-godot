@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyegntr8kvu5q"]
+
+[ext_resource type="Texture2D" uid="uid://dlqh7ti4rj4nj" path="res://icon.svg" id="1_o3nva"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_p6woj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1csql"]
+size = Vector2(1254, 128)
+
+[node name="Platform" type="StaticBody2D"]
+position = Vector2(7, 7)
+physics_material_override = SubResource("PhysicsMaterial_p6woj")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(53, 56)
+texture = ExtResource("1_o3nva")
+
+[node name="Icon2" type="Sprite2D" parent="Icon"]
+position = Vector2(123, 0)
+texture = ExtResource("1_o3nva")
+
+[node name="Icon2" type="Sprite2D" parent="Icon/Icon2"]
+position = Vector2(125, 0)
+texture = ExtResource("1_o3nva")
+
+[node name="Icon2" type="Sprite2D" parent="Icon/Icon2/Icon2"]
+position = Vector2(125, 0)
+texture = ExtResource("1_o3nva")
+
+[node name="Icon2" type="Sprite2D" parent="Icon/Icon2/Icon2/Icon2"]
+position = Vector2(125, 0)
+texture = ExtResource("1_o3nva")
+
+[node name="Icon2" type="Sprite2D" parent="Icon/Icon2/Icon2/Icon2/Icon2"]
+position = Vector2(125, 0)
+texture = ExtResource("1_o3nva")
+
+[node name="Icon2" type="Sprite2D" parent="Icon/Icon2/Icon2/Icon2/Icon2/Icon2"]
+position = Vector2(125, 0)
+texture = ExtResource("1_o3nva")
+
+[node name="Icon2" type="Sprite2D" parent="Icon/Icon2/Icon2/Icon2/Icon2/Icon2/Icon2"]
+position = Vector2(125, 0)
+texture = ExtResource("1_o3nva")
+
+[node name="Icon2" type="Sprite2D" parent="Icon/Icon2/Icon2/Icon2/Icon2/Icon2/Icon2/Icon2"]
+position = Vector2(125, 0)
+texture = ExtResource("1_o3nva")
+
+[node name="Icon2" type="Sprite2D" parent="Icon/Icon2/Icon2/Icon2/Icon2/Icon2/Icon2/Icon2/Icon2"]
+position = Vector2(125, 0)
+texture = ExtResource("1_o3nva")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(617, 54)
+shape = SubResource("RectangleShape2D_1csql")
